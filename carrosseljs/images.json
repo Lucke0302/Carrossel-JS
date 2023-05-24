@@ -1,0 +1,19 @@
+{
+    "images":[
+        {
+            "link": "first.png"
+        },
+        {
+            "link": "second.png"
+        },
+        {
+            "link": "third.png"
+        },
+        {
+            "link": "fourth.png"
+        },
+        {
+            "link": "fifth.png"
+        }
+    ]
+}

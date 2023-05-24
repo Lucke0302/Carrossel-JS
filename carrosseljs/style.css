@@ -1,0 +1,66 @@
+/* define margem e padding 0 para todos os elementos como padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilização da div container */
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* o display: flex possibilita centralizarmos a div carousel */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilização da div carousel */
+#carousel{
+    /* define o valor de width como 80% da div mãe, que é container */
+    width: 80%;
+    /* define o valor de height como 80% da div mãe, que é container */
+    height: 80%;
+    transition: 0.6s;
+    background-size: 80vw 80vh;
+    /* o display: flex possibilita posicionarmos os buttons */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between nos permite deixar os botões nas 
+    extremidades, caso houvessem mais botões eles se distribuiriam 
+    a fim de pelo menos dois ocuparem os cantos direito e esquerdo */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.button{
+    font-size: 6vmin;
+    transition: 0.3s;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.792);
+}
+/* hover é uma função do css que se ativa caso o mouse passe por cima
+de um elemento */
+button:hover{
+    font-size: 7vmin;
+}
+/* as media queries nos permitem redimensionar um elemento (no caso
+o carrossel) para que ele fique dessa maneira responsivo */
+@media (max-width: 800px) {
+    #carousel{
+        height: 60%;
+        background-size: 80vw 60vh;
+    }
+}
+@media (max-width: 600px) {
+    #carousel{
+        height: 45%;
+        background-size: 80vw 45vh;
+    }
+}
+@media (max-width: 400px) {
+    #carousel{
+        height: 30%;    
+        background-size: 80vw 30vh;
+    }
+}
